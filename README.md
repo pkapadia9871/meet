@@ -6,6 +6,12 @@ This app allows a user to search for events and view the details of them as well
 
 To view this application, please visit: https://pkapadia9871.github.io/meet/
 
+### How serverless functions will be used in the app:
+
+- To quickly deploy the app and ensure that all the developers have to focus on is coding.
+- To perform automatic scaling based on the number of requests received so that unlike when using a server, they don’t crash.
+- To only pay when the code inside your app is executed, so you’re only charged for what you use.
+
 ### Key Features
 
 1. Filter Events by City
