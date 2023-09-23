@@ -8,9 +8,9 @@ const Event = ({event}) => {
 
     return (
       <li className="event">
-        <h1>{event.summary}</h1>
-        <h1>{event.created}</h1>
-        <h1>{event.location}</h1>
+        <h4>{event.summary}</h4>
+        <h4>{event.created}</h4>
+        <h4>{event.location}</h4>
         <button className="click-details" onClick={()=>{setShowDetails(!showDetails)}}>
           {showDetails ? 'hide details':'show details'}
         </button>
