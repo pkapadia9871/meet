@@ -1,9 +1,14 @@
 import { useState } from "react";
 
-const NumberOfEvents = ({setCurrentNOE}) => {
+const NumberOfEvents = ({setCurrentNOE, setErrorAlert}) => {
     
     const handleInputChanged = (event) => {
         const value = event.target.value
+
+        if (value < 0 || isNaN(value))
+        {
+            setErrorAlert("error")
+        }
         setCurrentNOE(value)
     };
 
