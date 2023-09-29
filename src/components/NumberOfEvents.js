@@ -5,11 +5,12 @@ const NumberOfEvents = ({setCurrentNOE, setErrorAlert}) => {
     const handleInputChanged = (event) => {
         const value = event.target.value
 
-        if (value < 0 || isNaN(value))
-        {
+        if (value <= 0 || isNaN(value)) {
             setErrorAlert("error")
+        } else {
+            setErrorAlert("")
+            setCurrentNOE(value)
         }
-        setCurrentNOE(value)
     };
 
     return (

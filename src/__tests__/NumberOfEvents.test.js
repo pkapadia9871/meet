@@ -8,7 +8,8 @@ import { getEvents } from '../api';
 describe('<NumberOfEvents /> component', () => {
  let NumberOfEventsComponent;
  beforeEach(() => {
-    NumberOfEventsComponent = render(<NumberOfEvents setCurrentNOE={()=>{}}/>);
+    NumberOfEventsComponent = render(<NumberOfEvents setCurrentNOE={()=>{}}
+                                                      setErrorAlert={()=>{}} />);
  })
 
  test('ensure that NumberOfEvents component contains element with role of textbox', () => {
