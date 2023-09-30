@@ -6,6 +6,14 @@ This app allows a user to search for events and view the details of them as well
 
 To view this application, please visit: https://pkapadia9871.github.io/meet/
 
+### Technologies Used
+
+- React
+- Jest
+- Cucumber
+- Puppeteer
+- AWS Lambda
+
 ### How serverless functions will be used in the app:
 
 - To quickly deploy the app and ensure that all the developers have to focus on is coding.
