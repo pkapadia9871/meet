@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import {
-  ScatterChart,
-  Scatter,
+  PieChart,
+  Pie,
   XAxis, YAxis,
   CartesianGrid,
   Tooltip,
@@ -54,7 +54,7 @@ const EventGenresChart = ({ events }) => {
         dataKey="value"
         fill="#8884d8"
         labelLine={false}
-        label
+        label={renderCustomizedLabel}
         outerRadius={130}           
       />
     </PieChart>
