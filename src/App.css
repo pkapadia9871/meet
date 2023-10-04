@@ -136,9 +136,13 @@ input[type="number"] {
 }
 
 .charts-container {
-  grid-template-columns: 1fr 1fr 
+  grid-template-columns: 1fr 1fr ;
+  display: grid
 }  
   
 @media (max-width: 768px) {
-  grid-template-columns: 1fr 1fr 
+  .charts-container {
+    grid-template-columns: 1fr 1fr ;
+    display: grid
+  }
 }
